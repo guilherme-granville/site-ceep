@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    background-color: rgb(225, 197, 197);
+    background-image: linear-gradient(to bottom left, rgb(231, 229, 229), rgb(226, 201, 201));
+    overflow-x: hidden;
+    font-family: "Quicksand", sans-serif;
+}
+
+header .container {
+    background-color: rgb(187, 0, 0);
+    width: 100%;
+    top: 0;
+}
+
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+.titulo a {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0.6em;
+    margin-left: 3.15em;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.logo-ceep {
+    width: 90px;
+    height: 90px;
+    background-image: url(Assets/Logo-CEEP.png);
+    background-size: cover;
+    position: absolute;
+    margin-top: 0.5em;
+    margin-left: 0.8em;
+    transition: all 0.5s ease;
+}
+
+.logo-parana {
+    width: 70px;
+    height: 90px;
+    background-image: url(Assets/Brasão_do_Paraná.svg);
+    background-size: cover;
+    position: relative;
+    float: right;
+    margin-right: 0.8em;
+    margin-top: 0.5em;
+    transition: all 0.5s ease;
+}
+
+.logo-ceep:hover {
+    width: 91px;
+    height: 91px;
+    opacity: 0.9;
+}
+
+.logo-parana:hover {
+    width: 71px;
+    height: 91px;
+    opacity: 0.9;
+}
+
+.titulo a:hover {
+    border: 1px solid white;
+}
+
+header .ul {
+    background-color: rgb(222, 84, 84);
+    height: 45px;
+}
+
+header ul li {
+    display: inline;
+    font-size: 0;
+    position: relative;
+}
+
+header ul li a {
+    font-size: 20px;
+    padding: 0.6em 1em;
+    float: left;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header .navleft li a {
+    font-size: 20px;
+    width: calc(170px - 12px);
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .navleft li .last{
+    border-radius: 0 0 25px 0;
+}
+
+header ul li button {
+    font-size: 20px;
+    padding: 0.5em 1em 0.5em 2.4em;
+    float: left;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(222, 84, 84);
+}
+
+header ul li button:hover {
+    border: 1px solid white;
+    background-color: rgb(218, 65, 65);
+    cursor: pointer;
+}
+
+header ul li button:active {
+    background-color: rgb(212, 34, 34);
+}
+
+header ul li div {
+    height: 1px;
+    width: 1px;
+    position: relative;
+    bottom: 12px;
+    right: 2.4px;
+}
+
+.menui {
+    top: 7px;
+    height: 35px;
+    width: 35px;
+    background-image: url(Assets/menu.svg);
+    background-size: cover;
+    position: absolute;
+}
+
+.menu {
+    width: 170px;
+    text-align: left;
+}
+
+header ul li a:hover,
+.dropdown:hover .dropbtn {
+    border: 1px solid white;
+    background-color: rgb(218, 65, 65);
+}
+
+header ul li a:active,
+.drop .dropdown-content a:active,
+header ul li .drop1 .dropdown-content a:active,
+header ul li .drop2 .dropdown-content a:active,
+header ul li .drop4 .dropdown-content a:active {
+    background-color: rgb(212, 34, 34);
+}
+
+#login {
+    top: 0px;
+    float: right;
+}
+
+.Matricula:hover,
+#login:hover {
+    background-color: rgb(131, 33, 33);
+}
+
+.Matricula:active,
+#login:active {
+    background-color: rgb(113, 16, 16);
+}
+
+.dropdown .drop4 .dropdown-content a {
+    width: 98px;
+}
+
+.dropdown .drop3 {
+    left: 392px;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 57.5px;
+}
+
+.dropdown-content a {
+    background-color: rgb(255, 68, 68);
+    font-size: 15px;
+    padding: 0.9em;
+    width: 120px;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(244, 84, 84);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navleft {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: auto;
+    padding-bottom: 7px;
+    width: 170px;
+    border-radius: 0 0 25px 0;
+    background-color: rgb(222, 84, 84);
+    z-index: 999;
+}
+
+.navleft .dropdown{
+    width: 170px;
+    height: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+main section .sobre {
+    height: auto;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    background-image: linear-gradient(to top left, #f68181, rgb(254, 94, 94));
+    transition: all 0.5s ease;
+}
+
+.sobre .img {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    max-width: 100%;
+    max-height: 65%;
+    margin: 5px 5px 5px 5px;
+    transition: all 0.5s ease;
+}
+
+.sobre .img:hover {
+    opacity: 0.96;
+    max-height: 65.1%;
+}
+
+.content {
+    border: 1.5px solid white;
+}
+
+.sobre {
+    box-shadow: 6px 6px 10px rgb(236, 94, 94);
+    padding-bottom: 5px;
+    border-radius: 30px;
+}
+
+.sobre h2 {
+    padding: 1em 0.75em 0.5em 0.75em;
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sobre p {
+    font-size: 20px;
+    color: white;
+    margin: 0.7em 1em 0.75em 0.75em;
+    text-indent: 35px;
+    font-weight: 900;
+    line-height: 1.75em;
+    word-spacing: 0.2em;
+    text-align: justify;
+    transition: all 0.5s ease;
+}
+
+.contentfoot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: #535353;
+}
+
+
+footer p,
+footer li {
+    margin-top: 0.5em;
+    line-height: 1em;
+    color: white;
+}
+
+.foot {
+    width: 45%;
+}
+
+.foot p:nth-child(2) {
+    margin-top: 1.5em;
+    width: 45%;
+}
+
+.foot p:nth-child(3) {
+    padding: 1em 0.5em 0.5em 0.5em;
+    border-top: 0.5px solid white;
+    width: 40%;
+}
+
+.criadores {
+    margin-right: 20px;
+    margin-top: 30px;
+    width: 55%;
+    text-align: right;
+}
+
+.criadores p {
+    font-size: smaller;
+    color: black;
+}
+
+.img-footer {
+    max-width: 8%;
+}
+
+hr {
+    width: 60%;
+    margin-left: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.cursos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cursos span {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background-color: rgb(185, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 20px;
+    line-height: 1.4;
+    transition: 0.2s all ease;
+}
+
+.cursos span:hover {
+    background-color: rgb(204, 62, 62);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cursos span img {
+    margin-bottom: 0.5em;
+    width: 60px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .cursos span {
+        font-size: 12px;
+        width: 80px;
+        height: 80px;
+        padding: 20px;
+    }
+
+    .sobre {
+        width: 80vw !important;
+    }
+}
+
+@media screen and (max-width: 886px) {
+    header ul li button {
+        display: block !important;
+    }
+
+    .navhide {
+        display: none;
+    }
+
+    .img {
+        width: 90% !important;
+    }
+
+    .cursos span img {
+        margin-bottom: 1px;
+        width: 30px;
+    }
+
+    .cursos span {
+        font-size: 9px;
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    .sobre {
+        width: 90vw !important;
+        align-items: center;
+    }
+
+    .sobre p {
+        font-size: 15px;
+    }
+
+    .sobre h2 {
+        font-size: 20px;
+
+    }
+
+    .cursos span img {
+        width: 25px;
+    }
+
+    .cursos span {
+        font-size: 5px;
+        width: 35px;
+        height: 35px;
+        padding: 7px;
+        border-radius: 10px;
+    }
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+    }
+
+    .titulo a {
+        font-size: 30px;
+        justify-content: center;
+    }
+
+    footer {
+        font-size: 8px;
+    }
+
+    .logo-ceep {
+        width: 50px;
+        height: 50px;
+        background-image: url(Assets/Logo-CEEP.png);
+        background-size: cover;
+        position: absolute;
+        margin-top: 0.5em;
+        margin-left: 0.8em;
+        transition: all 0.5s ease;
+    }
+
+    .logo-parana {
+        width: 50px;
+        height: 60px;
+        background-image: url(Assets/Brasão_do_Paraná.svg);
+        background-size: cover;
+        position: relative;
+        float: right;
+        margin-right: 0.8em;
+        margin-top: 0.3em;
+        transition: all 0.5s ease;
+    }
+
+
+}
+
+@media screen and (max-width: 520px) {
+    .titulo a {
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
