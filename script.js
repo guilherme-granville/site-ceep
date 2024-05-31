@@ -12,21 +12,19 @@ function showContent(id) {
     // Cria a animação
     let animation = anime.timeline({
         targets: pageToShow,
-        duration: 200, // Duração da animação em milissegundos
-        easing: 'easeInOutQuad' // Função de suavização
+        duration: 200, 
+        easing: 'easeInOutQuad' 
     });
 
-    // Adiciona animações à timeline
     animation
         .add({
-            opacity: [0.9, 1], // Transição da opacidade de 0 para 1
-            scale: [0.9, 1], // Transição do tamanho de 0.5 para 1
+            opacity: [0.9, 1],
+            scale: [0.9, 1],
             begin: function () {
-                pageToShow.style.display = 'block'; // Mostra o formulário no início da animação
+                pageToShow.style.display = 'block';
             }
         });
 
-    // Inicia a animação
     animation.play();
 }
 
