@@ -30,17 +30,32 @@ function showContent(id) {
     animation.play();
 }
 
-function showMenu() {
-    let boolean
-    if (document.getElementById('navleft').style.marginLeft == '-200px') {
-    document.getElementById('navleft').style.marginLeft = '0';
-    boolean = false;
-    } else {
-    document.getElementById('navleft').style.marginLeft = '-200px';
-    boolean = true;
-    }
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const menuButton = document.getElementById("menuButton");
+    const navleft = document.getElementById("navleft");
 
+    function showMenu() {
+        if (navleft.style.marginLeft === '-200px' || navleft.style.marginLeft === '') {
+            navleft.style.marginLeft = '0';
+        } else {
+            navleft.style.marginLeft = '-200px';
+        }
+    }
+
+    menuButton.addEventListener("click", function(event) {
+        showMenu();
+        event.stopPropagation(); // Impede que o clique propague para o document
+    });
+
+    document.addEventListener("click", function(event) {
+        const isClickInsideMenu = navleft.contains(event.target);
+        const isClickOnMenuButton = menuButton.contains(event.target);
+
+        if (!isClickInsideMenu && !isClickOnMenuButton) {
+            navleft.style.marginLeft = '-200px';
+        }
+    });
+});
 function adjustNavLeftMargin() {
     if (window.innerWidth >= 886) {
         document.getElementById('navleft').style.marginLeft = '-200px';
