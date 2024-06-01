@@ -138,6 +138,47 @@ header ul li div {
     text-align: left;
 }
 
+
+.cursos {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cursos span {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background-color: rgb(185, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 20px;
+    line-height: 1.4;
+    transition: 0.2s all ease;
+}
+
+.cursos span:hover {
+    background-color: rgb(204, 62, 62);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cursos span:active {
+    transform: scale(1);
+}
+
+.cursos span img {
+    margin-bottom: 0.5em;
+    width: 60px;
+}
+
 header ul li a:hover,
 .dropdown:hover .dropbtn {
     background-color: rgb(218, 65, 65);
@@ -172,6 +213,7 @@ header ul li .drop4 .dropdown-content a:active {
 
 .dropdown .drop3 {
     left: 392px;
+    z-index: 999;
 }
 
 .dropdown-content {
@@ -195,6 +237,7 @@ header ul li .drop4 .dropdown-content a:active {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 
 .navleft {
     display: flex;
@@ -237,6 +280,7 @@ main section .sobre {
     margin: 5px;
     border-radius: 40px;
     transition: all 0.5s ease;
+    z-index: 0;
 }
 
 .content {
@@ -329,41 +373,6 @@ hr {
     background-color: #ffffff;
 }
 
-.cursos {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.cursos span {
-    margin-top: 20px;
-    width: 100px;
-    height: 100px;
-    padding: 20px;
-    background-color: rgb(185, 0, 0);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-weight: bold;
-    border-radius: 20px;
-    line-height: 1.4;
-    transition: 0.2s all ease;
-}
-
-.cursos span:hover {
-    background-color: rgb(204, 62, 62);
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.cursos span img {
-    margin-bottom: 0.5em;
-    width: 60px;
-}
 
 @media screen and (max-width: 1000px) {
     .cursos span {
