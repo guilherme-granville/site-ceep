@@ -108,7 +108,7 @@ header ul li button {
 }
 
 header ul li button:hover {
-    background-color: rgb(161, 41, 41);
+    background-color: rgb(218, 65, 65);
     cursor: pointer;
 }
 
@@ -134,13 +134,12 @@ header ul li div {
 }
 
 .menu {
-    width: 170px;
+    width: auto;
     text-align: left;
 }
 
 header ul li a:hover,
 .dropdown:hover .dropbtn {
-    border: 1px solid white;
     background-color: rgb(218, 65, 65);
 }
 
@@ -203,17 +202,21 @@ header ul li .drop4 .dropdown-content a:active {
     position: absolute;
     height: auto;
     padding-bottom: 7px;
-    width: 170px;
+    width: 250px;
     border-radius: 0 0 25px 0;
     background-color: rgb(222, 84, 84);
     z-index: 999;
 }
 
 .navleft .dropdown {
-    width: 170px;
+    width: 250px;
     height: 35px;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.navleft .dropdown .dropbtn {
+    width: 238px;
 }
 
 main section .sobre {
@@ -396,16 +399,25 @@ hr {
         width: 90% !important;
     }
 
-    .cursos span img {
-        margin-bottom: 1px;
-        width: 30px;
+    .cursos span {
+        font-size: 10px;
+        width: auto;
+        height: 80px;
+        padding: 7px;
+        min-width: 62px;
+        border-radius: 20px;
+        flex: 0.1 1 calc(20% - 20px);
     }
 
-    .cursos span {
-        font-size: 9px;
-        width: 60px;
-        height: 60px;
-        padding: 10px;
+    .cursos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; 
+        justify-content: center;display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
     }
 }
 
@@ -424,16 +436,9 @@ hr {
     }
 
     .cursos span img {
-        width: 25px;
+        width: 40px;
     }
 
-    .cursos span {
-        font-size: 5px;
-        width: 35px;
-        height: 35px;
-        padding: 7px;
-        border-radius: 10px;
-    }
 
     .titulo {
         display: flex;
@@ -451,7 +456,7 @@ hr {
     }
 
     footer {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .logo-ceep {

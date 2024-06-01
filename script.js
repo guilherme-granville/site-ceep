@@ -33,10 +33,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const navleft = document.getElementById("navleft");
 
     function showMenu() {
-        if (navleft.style.marginLeft === '-200px' || navleft.style.marginLeft === '') {
+        if (navleft.style.marginLeft === '-250px' || navleft.style.marginLeft === '') {
             navleft.style.marginLeft = '0';
         } else {
-            navleft.style.marginLeft = '-200px';
+            navleft.style.marginLeft = '-250px';
         }
     }
 
@@ -50,13 +50,13 @@ document.addEventListener("DOMContentLoaded", function() {
         const isClickOnMenuButton = menuButton.contains(event.target);
 
         if (!isClickInsideMenu && !isClickOnMenuButton) {
-            navleft.style.marginLeft = '-200px';
+            navleft.style.marginLeft = '-250px';
         }
     });
 });
 function adjustNavLeftMargin() {
     if (window.innerWidth >= 886) {
-        document.getElementById('navleft').style.marginLeft = '-200px';
+        document.getElementById('navleft').style.marginLeft = '-250px';
     }
 }
 window.onload = adjustNavLeftMargin;
