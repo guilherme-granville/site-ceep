@@ -15,13 +15,13 @@
 
     <header>
         <div class="container">
-        <div class="logo-ceep"></div>
-        <div class="logo-parana"></div>
+            <div class="logo-ceep"></div>
+            <div class="logo-parana"></div>
 
-        <div class="titulo">
-            <h1>CEEP - Cianorte</h1>
+            <div class="titulo">
+                <h1>CEEP - Cianorte</h1>
+            </div>
         </div>
-    </div>
         <nav>
             <ul class="ul">
                 <li>
@@ -38,20 +38,21 @@
                         <a class="dropbtn" href="index.html">Home</a>
                     </li>
                     <li class="dropdown">
-                        <a class="dropbtn" href="cursos.html">Cursos</a>
+                        <a class="dropbtn this" href="cursos.html">Cursos</a>
                     </li>
 
-                    <li class="dropdown">
-                        <a class="dropbtn" href="contato.html">Contato</a>
-                    </li>
-
+                    
                     <li class="dropdown">
                         <a class="dropbtn" href="laboratorios.html">Espaços e Laboratórios</a>
                     </li>
-
+                    <li class="dropdown">
+                        <a class="dropbtn" href="contato.html">Contato</a>
+                    </li>
+                    
                     <li class="dropdown">
                         <a class="dropbtn"
-                            href="https://www.google.com.br/maps/place/Centro+Estadual+de+Educa%C3%A7%C3%A3o+Profissional+Cianorte/@-23.6647017,-52.6257207,17z/data=!4m6!3m5!1s0x94ed59c6d1125dab:0xdaee9aaeef2ba67d!8m2!3d-23.6647017!4d-52.6257207!16s%2Fg%2F11dylyq9r6?entry=ttu" target="_blank">Localização</a>
+                            href="https://www.google.com.br/maps/place/Centro+Estadual+de+Educa%C3%A7%C3%A3o+Profissional+Cianorte/@-23.6647017,-52.6257207,17z/data=!4m6!3m5!1s0x94ed59c6d1125dab:0xdaee9aaeef2ba67d!8m2!3d-23.6647017!4d-52.6257207!16s%2Fg%2F11dylyq9r6?entry=ttu"
+                            target="_blank">Localização</a>
                         <div style="height: 0; width: 0;" class="drop3">
                             <div class="dropdown-content">
                                 <iframe
@@ -71,26 +72,27 @@
         </nav>
         <nav>
             <ul>
-                
+
                 <div id="navleft" class="navleft" style="margin-left: -250px; transition: all 0.5s ease;">
                     <li class="dropdown">
                         <a class="dropbtn" href="index.html">Home</a>
                     </li>
                     <li class="dropdown">
-                        <a class="dropbtn" href="cursos.html">Cursos</a>
+                        <a class="dropbtn this" href="cursos.html">Cursos</a>
                     </li>
 
-                    <li class="dropdown">
-                        <a class="dropbtn" href="contato.html">Contato</a>
-                    </li>
-
+                    
                     <li class="dropdown">
                         <a class="dropbtn" href="laboratorios.html">Espaços e Laboratórios</a>
                     </li>
-
+                    
+                    <li class="dropdown">
+                        <a class="dropbtn" href="contato.html">Contato</a>
+                    </li>
                     <li class="dropdown">
                         <a class="dropbtn"
-                            href="https://www.google.com.br/maps/place/Centro+Estadual+de+Educa%C3%A7%C3%A3o+Profissional+Cianorte/@-23.6647017,-52.6257207,17z/data=!4m6!3m5!1s0x94ed59c6d1125dab:0xdaee9aaeef2ba67d!8m2!3d-23.6647017!4d-52.6257207!16s%2Fg%2F11dylyq9r6?entry=ttu" target="_blank">Localização</a>
+                            href="https://www.google.com.br/maps/place/Centro+Estadual+de+Educa%C3%A7%C3%A3o+Profissional+Cianorte/@-23.6647017,-52.6257207,17z/data=!4m6!3m5!1s0x94ed59c6d1125dab:0xdaee9aaeef2ba67d!8m2!3d-23.6647017!4d-52.6257207!16s%2Fg%2F11dylyq9r6?entry=ttu"
+                            target="_blank">Localização</a>
                         <div style="height: 0; width: 0;" class="drop3">
                         </div>
                     </li>
@@ -126,7 +128,16 @@
                     </div>
                 </div>
                 <div id="ads" class="sobre">
-                    <img class="img" src="Assets/informatica.jpg">
+                    <div id="meuCarrossel" class="carrossel">
+                        <div class="carrossel-imagem">
+                            <img class="img" src="Assets/informatica.jpg">
+                        </div>
+                        <div class="carrossel-imagem">
+                            <img class="img" src="Assets/frente.png">
+                        </div>
+                        <a class="carrossel-seta esquerda" onclick="mover(-1)">❮</a>
+                        <a class="carrossel-seta direita" onclick="mover(1)">❯</a>
+                    </div>
                     <h2>Sobre Análise e Desenvolvimento de Sistemas</h2>
                     <p>Bem-vindo à turma de Análise e Desenvolvimento de Sistemas (ADS) do Centro Estadual de Educação
                         Profissional (CEEP)!</p>
@@ -141,7 +152,17 @@
                         e crescimento!</p>
                 </div>
                 <div id="quimica" class="sobre" style="display: none;">
-                    <img class="img" src="Assets/quim.jpg">
+                    <div id="meuCarrossel" class="carrossel">
+                        <div class="carrossel-imagem2">
+                            <img class="img" src="Assets/quim.jpg">
+                        </div>
+                        <div class="carrossel-imagem2">
+                            <img class="img" src="Assets/frente.png">
+                        </div>
+                        <a class="carrossel-seta esquerda" onclick="mover2(-1)">❮</a>
+                        <a class="carrossel-seta direita" onclick="mover2(1)">❯</a>
+                    </div>
+
                     <h2>Sobre Química</h2>
                     <p>Bem-vindo à turma de Química do Centro Estadual de Educação Profissional (CEEP)!</p>
                     <p>Descubra os segredos dos elementos e compostos. Aprenda em laboratórios modernos e com
@@ -153,7 +174,16 @@
 
                 </div>
                 <div id="vestuario" class="sobre" style="display: none;">
-                    <img class="img" src="Assets/vest.jpg">
+                    <div id="meuCarrossel" class="carrossel">
+                        <div class="carrossel-imagem3">
+                            <img class="img" src="Assets/vest.jpg">
+                        </div>
+                        <div class="carrossel-imagem3">
+                            <img class="img" src="Assets/frente.png">
+                        </div>
+                        <a class="carrossel-seta esquerda" onclick="mover3(-1)">❮</a>
+                        <a class="carrossel-seta direita" onclick="mover3(1)">❯</a>
+                    </div>
                     <h2>Sobre Vestuário</h2>
                     <p>Bem-vindo à turma de Vestuário do Centro Estadual de Educação Profissional (CEEP)!</p>
                     <p>Explore o fascinante mundo da moda e do design de roupas. Aprenda técnicas de modelagem, costura
@@ -167,7 +197,16 @@
 
                 </div>
                 <div id="farmacia" class="sobre" style="display: none;">
-                    <img class="img" src="Assets/farm.jpg">
+                    <div id="meuCarrossel" class="carrossel">
+                        <div class="carrossel-imagem4">
+                            <img class="img" src="Assets/farm.jpg">
+                        </div>
+                        <div class="carrossel-imagem4">
+                            <img class="img" src="Assets/frente.png">
+                        </div>
+                        <a class="carrossel-seta esquerda" onclick="mover4(-1)">❮</a>
+                        <a class="carrossel-seta direita" onclick="mover4(1)">❯</a>
+                    </div>
                     <h2>Sobre Farmácia</h2>
                     <p>Bem-vindo à turma de Farmácia do Centro Estadual de Educação Profissional (CEEP)!</p>
                     <p>Entre no mundo dos medicamentos e da saúde. Aprenda sobre farmacologia, dispensação de
@@ -179,7 +218,16 @@
                     <p>Junte-se a nós e faça a diferença na área da saúde!</p>
                 </div>
                 <div id="agronegocio" class="sobre" style="display: none;">
-                    <img class="img" src="Assets/agro.jpg">
+                    <div id="meuCarrossel" class="carrossel">
+                        <div class="carrossel-imagem5">
+                            <img class="img" src="Assets/agro.jpg">
+                        </div>
+                        <div class="carrossel-imagem5">
+                            <img class="img" src="Assets/frente.png">
+                        </div>
+                        <a class="carrossel-seta esquerda" onclick="mover5(-1)">❮</a>
+                        <a class="carrossel-seta direita" onclick="mover5(1)">❯</a>
+                    </div>
                     <h2>Sobre Agronegócio</h2>
                     <p>Bem-vindo à turma de Agronegócio do Centro Estadual de Educação Profissional (CEEP)!</p>
                     <p>Descubra as oportunidades no campo da agricultura e pecuária. Aprenda sobre gestão rural,
@@ -191,7 +239,16 @@
                     <p>Junte-se a nós e faça parte do futuro do agronegócio!</p>
                 </div>
                 <div id="rh" class="sobre" style="display: none;">
-                    <img class="img" src="Assets/rh.jpg">
+                    <div id="meuCarrossel" class="carrossel">
+                        <div class="carrossel-imagem6">
+                            <img class="img" src="Assets/rh.jpg">
+                        </div>
+                        <div class="carrossel-imagem6">
+                            <img class="img" src="Assets/frente.png">
+                        </div>
+                        <a class="carrossel-seta esquerda" onclick="mover6(-1)">❮</a>
+                        <a class="carrossel-seta direita" onclick="mover6(1)">❯</a>
+                    </div>
                     <h2>Sobre Recursos Humanos</h2>
                     <p>Bem-vindo à turma de Recursos Humanos do Centro Estadual de Educação Profissional (CEEP)!</p>
                     <p>Aprenda sobre gestão de pessoas e desenvolvimento organizacional. Prepare-se para uma
@@ -203,7 +260,16 @@
                     <p>Junte-se a nós e inicie sua jornada profissional em Recursos Humanos!</p>
                 </div>
                 <div id="seguranca" class="sobre" style="display: none;">
-                    <img class="img" src="Assets/segurança.jpg">
+                    <div id="meuCarrossel" class="carrossel">
+                        <div class="carrossel-imagem7">
+                            <img class="img" src="Assets/segurança.jpg">
+                        </div>
+                        <div class="carrossel-imagem7">
+                            <img class="img" src="Assets/frente.png">
+                        </div>
+                        <a class="carrossel-seta esquerda" onclick="mover7(-1)">❮</a>
+                        <a class="carrossel-seta direita" onclick="mover7(1)">❯</a>
+                    </div>
                     <h2>Sobre Segurança do Trabalho</h2>
                     <p>Bem-vindo à turma de Segurança do Trabalho do Centro Estadual de Educação Profissional (CEEP)!
                     </p>
@@ -229,14 +295,14 @@
                 <p>Endereço: R. Dom Pedro II, 1550 - Zona 01,</p>
                 <p>Cianorte - PR, 87200-025</p>
             </div>
-                <div class="criadores">
-                    <ul>
-                <li>Feito pelos alunos:</li>
-                 <li>André Dos Santos Assunção</li>
-                <li>Guilherme Gabriel Ziger Granville</li>
+            <div class="criadores">
+                <ul>
+                    <li>Feito pelos alunos:</li>
+                    <li>André Dos Santos Assunção</li>
+                    <li>Guilherme Gabriel Ziger Granville</li>
                 </ul>
-                    <hr>
-                    <p>&copy; 2024 CEEP - Centro Estadual de Educação Profissional. Todos os direitos reservados.</p>
+                <hr>
+                <p>&copy; 2024 CEEP - Centro Estadual de Educação Profissional. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>

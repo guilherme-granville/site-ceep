@@ -15,13 +15,13 @@
 
     <header>
         <div class="container">
-        <div class="logo-ceep"></div>
-        <div class="logo-parana"></div>
+            <div class="logo-ceep"></div>
+            <div class="logo-parana"></div>
 
-        <div class="titulo">
-            <h1>CEEP - Cianorte</h1>
+            <div class="titulo">
+                <h1>CEEP - Cianorte</h1>
+            </div>
         </div>
-    </div>
         <nav>
             <ul class="ul">
                 <li>
@@ -35,14 +35,10 @@
                 </li>
                 <div class="navhide">
                     <li class="dropdown">
-                        <a class="dropbtn" href="index.html">Home</a>
+                        <a class="dropbtn this" href="index.html">Home</a>
                     </li>
                     <li class="dropdown">
                         <a class="dropbtn" href="cursos.html">Cursos</a>
-                    </li>
-
-                    <li class="dropdown">
-                        <a class="dropbtn" href="contato.html">Contato</a>
                     </li>
 
                     <li class="dropdown">
@@ -50,8 +46,13 @@
                     </li>
 
                     <li class="dropdown">
+                        <a class="dropbtn" href="contato.html">Contato</a>
+                    </li>
+
+                    <li class="dropdown">
                         <a class="dropbtn"
-                            href="https://www.google.com.br/maps/place/Centro+Estadual+de+Educa%C3%A7%C3%A3o+Profissional+Cianorte/@-23.6647017,-52.6257207,17z/data=!4m6!3m5!1s0x94ed59c6d1125dab:0xdaee9aaeef2ba67d!8m2!3d-23.6647017!4d-52.6257207!16s%2Fg%2F11dylyq9r6?entry=ttu" target="_blank">Localização</a>
+                            href="https://www.google.com.br/maps/place/Centro+Estadual+de+Educa%C3%A7%C3%A3o+Profissional+Cianorte/@-23.6647017,-52.6257207,17z/data=!4m6!3m5!1s0x94ed59c6d1125dab:0xdaee9aaeef2ba67d!8m2!3d-23.6647017!4d-52.6257207!16s%2Fg%2F11dylyq9r6?entry=ttu"
+                            target="_blank">Localização</a>
                         <div style="height: 0; width: 0;" class="drop3">
                             <div class="dropdown-content">
                                 <iframe
@@ -71,17 +72,13 @@
         </nav>
         <nav>
             <ul>
-                
+
                 <div id="navleft" class="navleft" style="margin-left: -250px; transition: all 0.5s ease;">
                     <li class="dropdown">
-                        <a class="dropbtn" href="index.html">Home</a>
+                        <a class="dropbtn this" href="index.html">Home</a>
                     </li>
                     <li class="dropdown">
                         <a class="dropbtn" href="cursos.html">Cursos</a>
-                    </li>
-
-                    <li class="dropdown">
-                        <a class="dropbtn" href="contato.html">Contato</a>
                     </li>
 
                     <li class="dropdown">
@@ -89,8 +86,13 @@
                     </li>
 
                     <li class="dropdown">
+                        <a class="dropbtn" href="contato.html">Contato</a>
+                    </li>
+
+                    <li class="dropdown">
                         <a class="dropbtn"
-                            href="https://www.google.com.br/maps/place/Centro+Estadual+de+Educa%C3%A7%C3%A3o+Profissional+Cianorte/@-23.6647017,-52.6257207,17z/data=!4m6!3m5!1s0x94ed59c6d1125dab:0xdaee9aaeef2ba67d!8m2!3d-23.6647017!4d-52.6257207!16s%2Fg%2F11dylyq9r6?entry=ttu" target="_blank">Localização</a>
+                            href="https://www.google.com.br/maps/place/Centro+Estadual+de+Educa%C3%A7%C3%A3o+Profissional+Cianorte/@-23.6647017,-52.6257207,17z/data=!4m6!3m5!1s0x94ed59c6d1125dab:0xdaee9aaeef2ba67d!8m2!3d-23.6647017!4d-52.6257207!16s%2Fg%2F11dylyq9r6?entry=ttu"
+                            target="_blank">Localização</a>
                         <div style="height: 0; width: 0;" class="drop3">
                         </div>
                     </li>
@@ -111,7 +113,17 @@
 
             <div class="content">
                 <div class="sobre">
-                    <img class="img" src="Assets/frente.png">
+                    <div id="meuCarrossel" class="carrossel">
+                        <div class="carrossel-imagem">
+                            <img class="img" src="Assets/frente.png">
+                        </div>
+                        <div class="carrossel-imagem">
+                            <iframe src="https://www.youtube.com/embed/8zljuO6GDtQ?si=wVz1qoJLS6khv1Iz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <a class="carrossel-seta esquerda" onclick="mover(-1)">❮</a>
+                        <a class="carrossel-seta direita" onclick="mover(1)">❯</a>
+                    </div>
+                    
                     <h2>Sobre</h2>
                     <p>O CEEP - Centro Estadual de Educação Profissional, é uma instituição dedicada a oferecer educação
                         de qualidade a jovens que estão ingressando no ensino médio, e adultos que já concluiram seus
@@ -143,14 +155,14 @@
                 <p>Endereço: R. Dom Pedro II, 1550 - Zona 01,</p>
                 <p>Cianorte - PR, 87200-025</p>
             </div>
-                <div class="criadores">
-                    <ul>
-                <li>Feito pelos alunos:</li>
-                 <li>André Dos Santos Assunção</li>
-                <li>Guilherme Gabriel Ziger Granville</li>
+            <div class="criadores">
+                <ul>
+                    <li>Feito pelos alunos:</li>
+                    <li>André Dos Santos Assunção</li>
+                    <li>Guilherme Gabriel Ziger Granville</li>
                 </ul>
-                    <hr>
-                    <p>&copy; 2024 CEEP - Centro Estadual de Educação Profissional. Todos os direitos reservados.</p>
+                <hr>
+                <p>&copy; 2024 CEEP - Centro Estadual de Educação Profissional. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>

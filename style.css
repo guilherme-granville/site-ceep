@@ -140,16 +140,19 @@ header ul li div {
 
 
 .cursos {
-    width: 100vw;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
-
 .cursos span {
     margin-top: 20px;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     padding: 20px;
     background-color: rgb(185, 0, 0);
     color: white;
@@ -161,6 +164,7 @@ header ul li div {
     font-weight: bold;
     border-radius: 20px;
     line-height: 1.4;
+    flex: 0 1 calc(15% -5px);
     transition: 0.2s all ease;
 }
 
@@ -172,6 +176,7 @@ header ul li div {
 
 .cursos span:active {
     transform: scale(1);
+    background-color: rgb(179, 31, 31);
 }
 
 .cursos span img {
@@ -273,18 +278,68 @@ main section .sobre {
     transition: all 0.5s ease;
 }
 
-.sobre .img {
+.sobre .carrossel {
+    position: relative;
     float: left;
     width: 50%;
+    height: auto;
     padding: 20px 20px 5px 20px;
     margin: 5px;
     border-radius: 40px;
     transition: all 0.5s ease;
+    overflow: hidden;
     z-index: 0;
+}
+
+.carrossel-seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.349);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.carrossel-seta:hover {
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.esquerda {
+    left: 20px;
+    border-radius: 3px 0 0 3px;
+}
+
+.direita {
+    right: 20px;
+    border-radius: 0 3px 3px 0;
+}
+
+.carrossel-imagem, .carrossel-imagem2, .carrossel-imagem3, .carrossel-imagem4, .carrossel-imagem5, .carrossel-imagem6, .carrossel-imagem7, .carrossel-imagem8 {
+    box-sizing: border-box;
+    display: none;
+}
+
+.carrossel-imagem img, .carrossel-imagem2 img, .carrossel-imagem3 img, .carrossel-imagem4 img, .carrossel-imagem5 img, .carrossel-imagem6 img, .carrossel-imagem7 img, .carrossel-imagem8 img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carrossel-imagem iframe, .carrossel-imagem2 iframe, .carrossel-imagem3 iframe, .carrossel-imagem4 iframe, .carrossel-imagem5 iframe, .carrossel-imagem6 iframe, .carrossel-imagem7 iframe, .carrossel-imagem8 iframe {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .content {
     border: 1.5px solid white;
+    min-height: 900px;
 }
 
 .sobre {
@@ -364,6 +419,10 @@ footer li {
     max-width: 8%;
 }
 
+.this {
+    text-decoration: underline;
+}
+
 hr {
     width: 60%;
     margin-left: auto;
@@ -396,14 +455,14 @@ hr {
         display: none;
     }
 
-    .content {
+    .sobre {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .img {
+    .carrossel {
         float: none !important;
         width: 90% !important;
     }
@@ -460,7 +519,7 @@ hr {
         font-size: 30px;
         justify-content: center;
     }
-    .img {
+    .carrossel {
         width: 85% !important;
     }
 
